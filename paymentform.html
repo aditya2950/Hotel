@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head><title>Payment Form</title>
+<style>
+*{
+box-sizing:border-box;
+}
+.payment{
+width:400px;
+margin-left:10px;
+}
+.payment input{
+float:left;
+font-size:20px;
+width:400px;
+padding:10px;
+margin-bottom:20px; 
+}
+.option select{
+font-size:20px;
+width:190px;
+padding:10px;
+margin-bottom:20px;
+margin-left:5px; 
+float:left;
+
+}
+.option option{
+
+}
+#paymentform{
+width:400px;
+margin-left:10px;
+}
+#paymentform input{
+font-size:20px;
+width:400px;
+margin:13px 0px;
+padding:10px;
+}
+.submit{
+width:400px;
+}
+.submit input{
+width:200px;
+background-color:#00dbeb;
+color:white;
+margin-left:10%;
+padding:10px;
+font-size:20px;
+border:none;
+border-radius:10px;
+transition:0.5s;
+margin-bottom:50px;
+}
+.submit:hover{
+transform:scale(0.97);
+}
+#pfall{
+margin-top:40px;
+text-align:center;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+body{
+background-color:#f1e9e9;
+}
+</style>
+</head>
+<body>
+<div id="pfall">
+<h1>Payment Form</h1>
+<hr>
+<div class="payment">
+<form method="post" validate>
+<input type="text" name="cardno" id="cardno" placeholder="Card Number" required pattern="[0-9]{12}">
+<div class="option">
+<select id="month">
+<option>Month</option>
+<option>01 Jan</option>
+<option>02 Feb</option>
+<option>03 March</option>
+<option>04 Apr</option>
+<option>05 May</option>
+<option>06 Jun</option>
+<option>07 Jul</option>
+<option>08 Aug</option>
+<option>09 Sep</option>
+<option>10 Oct</option>
+<option>11 Nov</option>
+<option>12 Dec</option>
+</select>
+<select id="year">
+<option>Year</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+<option>2029</option>
+<option>2030</option>
+</select>
+</div>
+</div>
+
+<div id="paymentform">
+<h1>Guest Information</h1>
+<hr>
+<input type="text" name="fname" id="name" placeholder="First Name" required pattern="[^0-9][a-zA-Z]{3,15}">
+<input type="text" name="lname" id="lname" placeholder="Last Name" required pattern="[^0-9][a-zA-Z]{3,15}">
+<input type="email" name="email" id="email" placeholder="Email" required>
+<input type="text" name="phone" id="phone"  placeholder="Phone" required pattern="[7-9]{1}[0-9]{9}">
+<input type="text" name="address" id="address" placeholder="Address"  required>
+<input type="text" name="city" id="city" placeholder="City" required>
+</div>
+<div class="submit">
+<input type="submit" value="Book Reservation" onclick="book()">
+</form>
+</div>
+</div>
+<script>
+function book()
+{
+var cardno=document.getElementById("cardno").value;
+var month=document.getElementById("month").value;
+var year=document.getElementById("year").value;
+var name=document.getElementById("name").value;
+var lname=document.getElementById("lname").value;
+var email=document.getElementById("email").value;
+var address=document.getElementById("address").value;
+var city=document.getElementById("city").value;
+if(name=="" || lname=="" || email=="" || phone=="" || address=="" ||cardno=="")
+{
+alert("Please Check the missing field");
+}
+else{
+alert("Room Booked Sucessfully.");
+}
+}
+</script>
+</body>
+</html>

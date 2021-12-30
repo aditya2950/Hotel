@@ -1,0 +1,85 @@
+<!doctyp html>
+<html>
+<head><title>Sign In</title>
+<link href="./CSS/hotelcss.css" rel="stylesheet">
+<link href="./CSS/all.min.css" rel="stylesheet"></link>
+</head>
+<body id="slbody">
+<div class="adityaheading">                
+<h1>Aditya Hotel Kolhapur</h1>                       <!--aditya image logo-->
+</div>
+<div class="slcontainer">
+<div id="signall">
+<div id="signinform" >
+<h3>Create An Account</h3>
+<form method="post" action="sign.html">
+<div class="socialicon">
+<a><i class="fab fa-facebook-f"></i></a>
+<a><i class="fab fa-google"></i></a>
+<a><i class="fab fa-linkedin-in"></i></a>
+</div>
+<p class="slp">or use your account</p>
+<input type="text"  placeholder="Enter Name" required pattern="[a-zA-Z]{5,20}[^0-9]">
+<input type="Email"  placeholder="Enter Your Email" required>
+<input type="password" placeholder="Enter Your Password" id="pass" required pattern="[a-zA-Z,0-9]{4,10}">
+<input type="password"  placeholder="Re-enter Your Password" id="repass" required pattern="[a-zA-Z0-9]{4,10}">
+<div class="silibutton">
+<input  style="background-color:#ff0000;"  type="submit"  onclick="checkpass()" value="SIGN UP">
+</div>
+</form>
+</div>
+<div class="slup">
+<h4>Welcome Back</h4>
+<p>To keep Conecnted with us please login with your personal info</p>
+<button class="slbutton" onclick="signpage()">SIGN IN</button>
+</div>
+</div>
+
+
+
+<div class="LoginContainer" id="loginpage">
+<div class="login1">
+<div class="loginform">
+<h3>Sign In</h3>
+<form action="Sayajihomepage.html">
+<div class="socialicon">
+<a><i class="fab fa-facebook-f"></i></a>
+<a><i class="fab fa-google"></i></a>
+<a><i class="fab fa-linkedin-in"></i></a>
+</div>
+<p class="slp">or use your account</p>
+<input type="email" placeholder="Enter Your Email" required >
+<input type="password" placeholder="Enter Your Password" required pattern="[a-zA-Z,0-9]{4,10}">
+<div class="silibutton">
+<input style="background-color:red;" type="submit" value="SIGN IN">
+</div>
+</form>
+</div>
+</div>
+
+<div class="slup">
+<h4>Hello Friends</h4>
+<p>Enter Your details and start journey with us</p>
+<input type="submit" class="slbutton" onclick="loginpage()" value="SIGN UP">
+</div>
+
+</div>
+</div>
+<script>
+function loginpage()
+{
+ var a=document.getElementById("loginpage");
+ a.style.position="absolute";
+ a.style.left="-101%";
+}
+function signpage()
+{
+var a=document.getElementById("loginpage");
+ a.style.position="";
+ a.style.right="100%";
+}
+
+
+</script>
+</body>
+</html>

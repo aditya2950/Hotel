@@ -1,0 +1,749 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+.body-background{
+	background-color:#ededed;
+}
+/*navigation bar */
+header{                               
+	float:left;
+	background-color:#ffffff;
+	box-shadow:6px 0px 10px black;
+	padding:25px;
+	width:100%;
+	color:white;
+	position:sticky;
+	top:0px;
+	z-index:1;
+	
+}
+
+.menulinks ul{
+	margin-left:160px;
+}	
+.menulinks ul li{                     /*menu links */
+	list-style-type:none;
+	float:left;
+	margin-left:50px;
+	font-size:20px;
+	
+}
+
+.menulinks ul li a{   
+    text-decoration:none;
+	color:#000000;
+}
+
+.menulinks ul li a:hover{            /*menu links hover effect */
+	color:#00dbeb;
+}
+
+.signlinks ul{                     /*sign in links */
+   margin-left:80%;
+}
+ 
+.logo img{                         /*aditya image logo  */
+	position:absolute;
+	top:0px;
+	height:65px;
+	width:90px;
+}
+
+
+
+
+
+
+
+
+
+
+/*section part*/
+
+.reservationform{              /*registration form*/
+    font-size:30px;
+	text-align:center;
+    font-weight:bold;
+}
+
+.reservationform input{
+   margin:30px 0px;
+   font-size:25px;
+   border:none;
+   padding:6px;
+   margin-left:5px;
+   border-radius:10px;
+   box-shadow:0px 0px 5px black;
+}
+.guest input{
+	 margin-left:20px;
+	 padding:9px;
+	 width:15%;
+}
+
+.checkbutton input{
+	background-color:#00dbeb;
+	border:none;
+	color:white;
+	margin-top:5px;
+	trasition:0.5s;
+}
+.checkbutton input:hover{
+	 transform: scale(0.98);
+	 background-color:black;
+}
+.sayajiimage img{                    /*aditya image*/
+   height:800px;
+   width:100%;
+}
+
+
+
+
+#services {                        /*services part*/
+   text-align:center;
+   margin-top:40px;
+   font-size:25px;
+   margin-bottom:60px;
+}
+
+.service-container{   
+    margin-top:30px;                           /*servicescontainer center*/
+	display:flex;
+	justify-content:center;
+}
+.service-container-box{      
+	width:30%;
+	height:300px;
+	border:1px solid black;                      /*servicescontainer box */
+	float:left;
+	padding-top:250px;
+	margin-left:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.8s;
+	background:rgba(0,0,0,0.7)url("carparking.jpg");
+	background-size:cover;
+	background-blend-mode:darken;
+	color:white;
+}
+.service-container-box:nth-child(2){
+	background:rgba(0,0,0,0.8)url("wifi.jpg");
+	background-size:100% 100%;
+	background-blend-mode:darken;
+}
+.service-container-box:nth-child(3){
+	background:rgba(0,0,0,0.8)url("lowerprice.jpg");
+	background-size:100% 100%;
+	background-blend-mode:darken;
+}
+
+
+.service-container-box2{      
+	width:30%;
+	height:300px;
+	border:1px solid black;                      /*servicescontainer box */
+	float:left;
+	padding-top:250px;
+	margin-left:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.8s;
+	background:rgba(0,0,0,0.7)url("carparking.jpg");
+	background-size:cover;
+	background-blend-mode:darken;
+	color:white;
+}
+
+
+
+.service-container-box2:nth-child(1){
+	background:rgba(0,0,0,0.7)url("swimmingpool.jpg");
+	background-size:cover;
+	background-blend-mode:darken;
+}
+.service-container-box2:nth-child(2){
+	background:rgba(0,0,0,0.8)url("breakfast.jpg");
+	background-size:cover;
+	background-blend-mode:darken;
+}
+.service-container-box2:nth-child(3){
+	background:rgba(0,0,0,0.7)url("safety.png");
+	background-size:cover;
+	background-blend-mode:darken;
+}
+
+.service-container-box2:hover{
+	padding-top:60px;                             /*servicescontainer hover effect*/
+}
+
+.service-container-box:hover{
+	padding-top:60px;                             /*servicescontainer hover effect*/
+}
+.service{
+	float:left;
+}
+.service i{
+	float:left;
+	transition:2s;                             /*services icon*/
+	margin-left:20px;
+}
+.service span{
+	display:inline-block;                            /*paragraph*/
+	padding-top:10px;
+	
+
+}
+
+.content-blog p{
+	  width:100%;
+	  text-align:justify;
+	  padding:20px;
+	  z-index:-1;
+	  float:left;
+	  
+}
+
+
+
+/*services icon*/
+
+.fa-car{
+	color:#00dbeb;
+	font-size:40px;
+}
+.fa-wifi{
+	color:#00dbeb;
+	font-size:40px;
+}
+.fa-dollar-sign{
+	color:#00dbeb;
+	font-size:40px;
+}
+.fa-swimmer{
+	color:#00dbeb;
+	font-size:40px;
+}
+.fa-coffee{
+	color:#00dbeb;
+	font-size:40px;
+}
+.fa-head-side-mask{
+	color:#00dbeb;
+	font-size:40px;
+}
+
+
+
+
+/*about para*/
+#abouthotel{                                   
+   text-align:center;
+   margin-top:200px;
+   font-size:25px;
+   position:relative;                     /*position relative for overlap*/
+}
+
+.about-container{
+	width:80%;                 	/*about container*/
+	background-color:#ffffff;
+	margin:auto; 
+    display:flex;                                /*flex value with space between first and last*/
+    justify-content:space-between;
+	border-radius:10px;
+	overflow:hidden;
+	margin-top:30px;
+	box-shadow:0px 0px 5px black;
+}
+.aboutpara p{
+	text-align:justify;
+	text-indent:60px;
+	margin:20px;
+	font-size:22px;
+}
+.aboutpara{
+	width:50%;
+	height:550px;
+}
+.aboutpara h1{
+	margin-top:20px;
+}
+.aboutimage{
+	width:50%;
+	height:550px;
+}
+.aboutimage img{                          /*about container image*/
+	width:100%;
+	background-size:cover;
+	height:100%;
+}
+#aboutus{
+	font-size:25px;
+	background-color:#00dbeb;             /*position absolute for overlap   about us */
+	display:block;
+	text-align:center;
+	position:absolute;
+	float:left;
+	width:100%;
+	height:60%;
+	padding:70px 0px;
+}
+
+
+
+/*contact image*/
+.contact-image img{
+	margin-top:100px;
+	width:100%;
+}
+
+ /*sayaji location*/
+
+iframe{
+	display:block;
+	position:absolute;
+	float:left;
+	width:100%;
+	height:50%;
+}
+
+
+.Horizonatal-line{
+	width:1px;
+	height:500px;                                       /*horizontal  line */
+	background:#e3e3e3;
+	margin:auto;
+	
+
+}
+
+
+
+
+/*contact page*/
+#contact-container{
+	margin-top:200px;
+	font-size:25px;
+}
+#contact-form-container{
+	width:70%;
+	position:relative;
+	margin:auto;                                                       /*position absolute for overlap  contact form*/
+	display:flex;
+	justify-content:space-between;
+	background-color:#ffffff;
+	box-shadow:0px 0px 3px black;
+}
+#form{
+  width:50%;
+  margin:20px;
+ 
+}
+.tele{
+font-size:20px;
+width:500px;
+padding:10px;
+ border:none;
+background-color:#e3e3e3;
+}
+#form textarea{
+height:130px;
+}
+.button{
+	display:block;
+	background-color:#00dbeb;;
+	transition:0.5s;
+    padding:12px;
+    font-size:20px;
+    color:white;
+    width:500px;
+	margin:auto;
+    margin-top:-14px;
+	margin-bottom:50px;
+	border:none;
+}
+.formheading{
+	margin:25px 0px;
+    color:#000000;
+	float:left;
+}
+.button:hover{
+	background-color:#000;
+	
+}
+.contactus-info{
+	width:50%;
+	background-color:white;
+	text-align:left;
+}
+.contactaddress h2{
+	margin-top:12px;
+	margin-bottom:30px;
+
+}
+.contactaddress span{
+	margin-left:10px;
+	font-size:30px;
+}
+.contactaddress p{
+	margin-left:48px;
+	text-align:justify;
+}
+.contactaddress{
+	margin:30px;
+}
+.contact-iconbar{
+	display:block;
+	margin-top:50px;
+	float:left;
+	font-size:20px;
+	margin-left:10px;
+}
+
+
+
+
+
+
+/*contact icon bar*/
+.fa-map-marker-alt{
+	color:#00dbeb;
+	font-size:30px;
+}
+.fa-phone-alt{
+	color:#00dbeb;
+	font-size:30px;
+}
+.fa-envelope{
+	color:#00dbeb;
+	font-size:30px;
+}
+
+
+
+
+
+
+/*sign in page*/
+.adityaheading{
+	margin-top:40px;
+    text-align:center;
+	font-size:23px;
+}
+#signinform{
+width:400px;
+height:460px;
+background-color:#ffffff;
+padding:20px;
+float:left;
+}
+#signinform form input{
+font-size:20px;
+margin-top:18px;
+padding:8px;
+width:100%;
+margin-left:0px;
+background-color:#f0efef;
+border:none;
+}
+.silibutton{
+	margin-left:30%;
+	width:130px;
+	transition:0.5s;
+}
+.silibutton input{
+	border-radius:20px;
+	color:#ffffff;
+	
+    
+}
+.silibutton:hover{
+	transform:scale(0.95);
+}
+/*second div box*/
+.slup{
+	width:400px;
+	height:460px;
+    background-color:#ff0000;
+	float:left;
+    color:#ffffff;
+}
+#signall{
+	width:800px;
+    display:flex;
+	overflow:hidden;
+}
+#signall h3{
+	text-align:center;
+	font-size:40px;
+
+}
+.slup h4{
+	text-align:center;
+	font-size:40px;
+	margin-top:20%;
+	margin-bottom:30px;
+}
+.slup p{	
+	width:300px;
+	margin-left:14%;
+	text-align:center;
+	margin-bottom:30px;
+	word-wrap:break-word;
+	font-size:18px;
+}
+.slbutton{
+	background-color:green;
+	font-size:20px;
+	border-radius:20px;
+	border:none;
+	width:130px;
+	padding:8px;
+    margin-left:33%;
+	transition:0.5s;
+	color:#ffffff;
+}
+.slbutton:hover{
+	transform:scale(0.95);
+}
+.slp{
+	font-size:18px;
+	text-align:center;
+	margin-top:10px;
+}
+/*social icon*/
+.socialicon{
+	display:flex;
+	justify-content:center;
+}
+.socialicon a{
+	margin-top:12px;
+    height:45px;
+	width:45px;
+	float:left;
+	background-color:white;
+	border-radius:50%;
+	box-shadow:0px 0px 10px #0000ff;
+	margin-right:20px;
+}
+.socialicon a i{
+	font-size:22px;
+	text-align:center;
+	margin-top:12px;
+	margin-left:14px;
+	transition:0.5s;
+}
+.socialicon a i:hover{
+	transform:scale(1.4);
+}
+.fa-google{
+	color:#ff0000;
+}
+.fa-facebook-f{
+	color:#0000ff;
+}
+.fa-instagram{
+	color:#ff00ff;
+}
+.fa-twitter{
+	color:rgb(0,100,300);
+}
+.fa-youtube{
+	color:#ff0000;
+}	
+.fa-linkedin-in{
+	color:rgb(0,80,300);
+}
+
+
+/*Login form*/
+.login1 h3{
+	text-align:center;
+	font-size:40px;
+	margin-top:30px;
+}
+.login1{
+	width:400px;
+	height:460px;
+	background-color:#ffffff;
+	float:left;
+	padding:20px;
+}
+.loginform input{
+	font-size:20px;
+	border:none;
+	width:100%;
+	background-color:#f0efef;
+	margin-top:22px;
+    padding:8px;
+    background-color:#f0efef;
+
+}
+.logindiv{
+	font-size:40px;
+	width:400px;
+	height:470px;
+	background-color:green;
+	float:left;
+}
+
+
+/*signcontainer*/
+.slcontainer{
+	position:absolute;
+	display:flex;
+	justify-content:center;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+    width:800px;
+	overflow:hidden;
+}
+.logincontainer{
+	width:800px;
+    display:flex;
+	border-radius:20px;
+}
+#slbody{
+	background-color:#e3e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer section*/
+#footer{
+	margin-top:50px; 
+	font-size:20px;
+	color:white;
+	float:left;
+    height:500px;
+	width:100%;
+	text-align:center;
+	line-height:60px;
+	background:rgba(0,0,0,0.7)url("footerbackground.jpg");
+	background-size:100% 100%;
+	background-blend-mode:darken;
+	background-attachment:fixed;
+}
+
+.sayajilogo-footer img{                                                           /*adityafooter-logo*/
+     margin-top:60px;
+	 width:200px;
+	 height:120px;
+	
+}
+
+
+
+ /*footer menu links*/
+.footermenulinks{
+	z-index:1;
+     display:flex;
+     justify-content:center;
+}
+.footermenulinks ul li a{
+     text-decoration:none;
+     margin:0px 40px;
+     color:white;
+}
+.footermenulinks ul li a:hover{
+     color:#00dbeb;
+}
+a.active{	
+	 color:red;
+}
+.footermenulinks ul li{
+     float:left;
+     list-style-type:none;   
+}
+.copyrigth p{
+	margin-top:25px;
+	position:relative;
+}
+.copyrigth p::before{
+	content: "";
+	width:500px;
+	height:1px;
+	background:white;
+	position:absolute;
+	left:12%;
+	top:50%;
+	
+
+}
+.copyrigth p::after{
+	content: "";
+	width:500px;
+	height:1px;
+	background:white;
+	position:absolute;
+	top:50%;
+
+}
+
+
+
+
+
+
+/*footer iconbar*/
+.iconbar{
+	margin:0px;
+	display:flex;
+    justify-content:center;
+	
+}
+/*iconbar anchor*/
+.iconbar a{
+	margin-top:-30px;
+	display:block;
+	height:45px;
+	width:45px;
+	margin-left:15px;
+	float:left;
+    text-decoration:none;                              /*iconbar */
+	background-color:white;
+	border-radius:50%;
+	color:black;
+	box-shadow:0px 0px 10px #0000ff;
+	text-shadow:0px 0px 0px #0000ff;
+	
+}
+.iconbar a i{
+    display:block;
+    margin-top:14px;
+	text-align:center;
+	box-sizing:border-box;
+	transition:0.2s linear;
+}
+.iconbar a:hover i{
+	transform: scale(1.4);
+}
+
+
+
+
+.fa-facebook-f{
+	color:#0000ff;
+}
+.fa-instagram{
+	color:#ff00ff;
+}
+.fa-twitter{
+	color:rgb(0,100,300);
+}
+.fa-youtube{
+	color:#ff0000;
+}	
+.fa-linkedin-in{
+	color:rgb(0,80,300);
+}

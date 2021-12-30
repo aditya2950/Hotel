@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head><title>Sayaji Hotel Homepage</title>
+<link href="./CSS/hotelcss.css" rel="stylesheet">
+<link href="./CSS/all.min.css" rel="stylesheet"></link>
+</head>
+<body class="body-background">
+<div id="headerpart">
+<header>
+<div id="nav-container">
+<div class="logo">                
+<a href="Index.html"><img src="./Images/adityahotellogo.jpg"></a>                       <!--aditya image logo-->
+</div>
+
+<div class="menulinks">           
+<ul>
+<li><a href="Index.html">Home</a></li>             <!--menu links in home paage-->
+<li><a href="#aboutlink">About Us</a></li>
+<li><a href="#servicelink">Services</a></li>
+<li><a href="#contac-contariner-id">Contact Us</a></li>
+<li><a href="#sectionpart">Book Now</a></li>
+</ul>
+
+<div class="signlinks">              <!--sign in links-->
+<ul>
+<li><a href="sign.html">Sign In</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</header>                       
+
+
+
+<div id="sectionpart">
+<section>                           <!--Section part-->
+<div class="reservationform">
+<form action="Availavbleroom.html">
+<label>Check in Date</label><input type="date" required id="date">
+Check Out Date<input type="date" required id="date2">
+<span class="guest">
+<input type="number" placeholder="Guest" required min=1 max=50>
+</span>
+<div class="checkbutton">
+<input type="submit" onclick="dates()" value="Check Rooms & Rates">
+</div>
+</form>
+</div>
+
+<div class="sayajiimage">                      
+<img src="./Images/adityahotel.jpg">
+</div>
+</section>
+</div>
+
+
+
+<!--services part-->
+<div id="servicelink">
+<br>
+<br>
+
+<div id="services">  
+
+                           <!--Services-->
+<h1>Our Services</h1>
+
+<div  class="service-container">                     <!--Services container-->
+
+<div class="service-container-box">
+<div class="service" >
+<i class="fas fa-car"></i>                              <!--Services container info-->
+<span>&nbsp;&nbsp;Car Parking</span>
+</div>
+<br>
+<div class="content-blog">
+<p>We choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
+</div>
+</div>
+
+<div class="service-container-box">
+<div class="service">
+<i class="fas fa-wifi"></i>
+<span>&nbsp;&nbsp;Free WiFi</span>
+</div>
+<br>
+
+<div class="content-blog">
+<p>Aditya hotel offers free Internet access. High-speed wireless Internet connection is complimentary both in the rooms and public areas.</p>
+</div>
+</div>
+
+<div class="service-container-box">
+<div class="service">
+<i class="fas fa-dollar-sign"></i>
+<span>&nbsp;&nbsp;Lowest Price</span>
+</div>
+<br>
+<div class="content-blog">
+<p>When you book at AdityaHotel.com, We gurantee you'll always get the lowest price. If you find a lower rate we'll match it and give an extra 25% off.</p>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="service-container">
+
+<div class="service-container-box2">
+<div class="service" id="">
+<i class="fas fa-swimmer"></i>
+<span>&nbsp;&nbsp; Swimming Pools</span>
+</div>
+<br>
+<div class="content-blog">
+<p>Aditya Hotel Provide Swimming Pools to guest.</p>
+</div>
+</div>
+
+<div class="service-container-box2">
+<div class="service">
+<i class="fas fa-coffee"></i>
+<span>&nbsp;&nbsp;Breakfast</span>
+</div>
+<br>
+<div class="content-blog">
+<p>The hotel restaurant with both indoor and outdoor seating offers an open-buffet breakfast and is directly accessible from guestroom corridors.</p>
+</div>
+</div>
+
+<div class="service-container-box2">
+<div class="service">
+<i class="fas fa-head-side-mask"></i>
+<span>&nbsp;&nbsp;Safety</span>
+</div>
+<br>
+<div class="content-blog">
+<p>Free face masks
+Hand sanitizer in guest accommodation and key areas.<br>
+Staff trained in safety protocol.<br>
+Physical/social distancing guidelines.
+<p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>                                                               <!--service link complete-->
+
+<!--About container-->
+<div id="aboutlink">
+<br>
+
+<div id="aboutus">
+<h1>About Us</h1>
+</div>
+<div id="abouthotel">
+<div class="about-container">
+
+<div class="aboutpara">
+<h1>Aditya Hotel</h1>
+<p>Aditya Hotels is India’s premier luxury hospitality brand with an ever-growing presence across the country. Known for our bespoke experiences and signature hospitality, we are ushering in new standards of opulence in the 4-star and 5-star hotel industry. We believe a luxurious stay should indulge and satiate all the senses and become an unforgettable experience. Our curated stays are a testament to this fact.</p>
+
+<p>At every Aditya Hotels property, you will find contemporarily designed accommodations equipped with all the modern comforts, fine-dining restaurants helmed by the finest chefs, grand banquets to host high-profile events, world-class hospitality services by highly trained and experienced staff, and a plethora of unique amenities for bespoke experiences. Each aspect is designed to redefine a luxurious stay.</p>
+
+</div>
+<div class="aboutimage">
+<img src="./Images/hotelaboutimage.jpg">
+</div>
+
+</div>
+</div>
+
+
+</div>                                        <!--About link coplete-->
+
+
+<!--aditya  contact image-->
+<div id="contac-contariner-id">
+<div class="contact-image">
+<img src="./Images/contactus.jpg">
+</div>
+
+
+<!--aditya hotel map-->
+<div class="sayajilocation">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d268692.08679697465!2d73.8574611568864!3d16.66818211330078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc05bdf093228fb%3A0x3e09bd6f9400e638!2sPant%20Krupa%20Wholesale%20Kirana%20Store!5e0!3m2!1sen!2sin!4v1640180655560!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+ <!--contactform section-->
+ <div id="contact-container">
+<div id="contact-form-container">
+
+<div id="form">
+<h2 class="formheading">Get in Touch</h2>
+<form>
+<input type="text" name="name" class="tele" placeholder="Enter Your Name" required pattern="[^0-9][a-zA-Z]{6,50}" ><br><br>
+<input type="email" name="email" class="tele" placeholder="Enter Your E-mail" required ><br><br>
+<input type="text" name="mo.no." class="tele" placeholder="Enter Mobile No." required pattern="[7-9]{1}[0-9]{9}"><br><br>
+<textarea name="contact" class="tele" placeholder="Enter Your Message" required></textarea><br><br>
+<div class="buttoncenter">
+<input type="submit" value="Submit" class="button" onclick="sub()">
+</div>
+</form>
+
+</div>
+<div class="Horizonatal-line">
+</div>
+
+<div class="contactus-info">
+<div class="contactaddress">
+<h2>Cotact Us</h2>
+<i class="fas fa-map-marker-alt"></i><span>Address</span>
+<p>Main Road Mangoli, Near Vitthalaidevi Mandiar Mangoli, India</p>
+</div>
+<div class="contactaddress">
+<i class="fas fa-phone-alt"></i><span>Phone</span>
+<p>9146662451</p>
+</div>
+<div class="contactaddress">
+<i class="far fa-envelope"></i><span>E-Mail</span>
+<p>adityaipatil2950@gmail.com</p>
+</div>
+<div class="contact-iconbar">
+<div class="iconbar">
+<a href=""><i class="fab fa-facebook-f"></i></a>
+<a href=""><i class="fab fa-instagram"></i></a>
+<a href=""><i class="fab fa-twitter"></i></a>
+<a href=""><i class="fab fa-youtube"></i></a>
+<a href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+ <!--footer section-->
+<div id="footerbackground">
+
+<div id="footer">
+<div class="sayajilogo-footer">                
+<a href="Index.html"><img src="./Images/adityahotellogo.jpg"></a>                       <!--Sayaji image logo-->
+</div>
+
+<div class="footermenulinks">           
+<ul>
+<li><a href="Index.html" onload="myFunction(this)">Home</a></li>             <!--menu links in home paage-->
+<li><a href="#aboutlink">About Us</a></li>
+<li><a href="#servicelink">Services</a></li>
+<li><a href="#contac-contariner-id">Contact Us</a></li>
+<li><a href="#sectionpart">Book Now</a></li>
+</ul>
+</div>
+<div class="copyrigth">
+<p>&copy 2021.aditya.com</p>
+</div>
+<br>
+<div class="iconbar">
+<a href=""><i class="fab fa-facebook-f"></i></a>
+<a href=""><i class="fab fa-instagram"></i></a>
+<a href=""><i class="fab fa-twitter"></i></a>
+<a href=""><i class="fab fa-youtube"></i></a>
+<a href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+
+</div>
+
+
+
+<script>
+var date=new Date();
+var tdate=date.getDate();
+var month=date.getMonth()+1;
+if(tdate<10)
+{
+  tdate="0"+tdate;
+}
+if(month<10)
+{
+  month="0"+month;
+}
+var year=date.getFullYear();
+
+mindate=year+"-"+month+"-"+tdate;
+console.log(mindate);
+document.getElementById("date").setAttribute('min',mindate);
+document.getElementById("date2").setAttribute('min',mindate);
+
+
+</script>
+</body>
+</html>
